@@ -1,5 +1,5 @@
 import "./App.css";
-import About from "./components/About";
+// import About from "./components/About";
 import Alert from "./components/Alert";
 import Navbar from "./components/Navbar";
 import TextForm from "./components/TextForm";
@@ -80,7 +80,7 @@ function App() {
   };
   return (
     <>
-      <Router>
+      {/* <Router> */}
         <Navbar
           title="Utils"
           aboutPage=" About"
@@ -89,29 +89,29 @@ function App() {
         />
         <Alert alert={alert} />
         <div className="container">
-          <Routes>
-            <Route path="/about" element= < About /> />
+          {/* <Routes>
+            <Route path="/about" element= < About /> /> */}
             {/* <About /> */}
             
-            <Route
+            {/* <Route
               path="/"
-              element= 
+              element=  */}
               < TextForm
                 title="Enter Text Here"
                 mode={mode}
                 toggleMode={toggleMode}
                 showAlert={showAlert}
               />
-            />
+            {/* /> */}
             {/* <TextForm
                 title="Enter Text Here"
                 mode={mode}
                 toggleMode={toggleMode}
                 showAlert={showAlert}
               /> */}
-          </Routes>
+          {/* </Routes> */}
         </div>
-      </Router>
+      {/* </Router> */}
     </>
   );
 }
